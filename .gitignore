@@ -8,7 +8,7 @@
 *.csv
 .DS*
 .vscode/settings.json
-env/
+egeda-env/
 
 
 
