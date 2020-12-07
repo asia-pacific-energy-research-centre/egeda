@@ -11,3 +11,5 @@ dependencies:
   - pandas
   - numpy
   - xlrd
+  - openpyxl
+  - XlsxWriter
