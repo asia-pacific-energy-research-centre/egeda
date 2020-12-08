@@ -71,7 +71,7 @@ NGL_df = df1[df1['fuel_code'].isin(['6_2_natural_gas_liquids', '6_3_refinery_fee
 
 assert NGL_df.value.isna().sum() == 0
 
-df2 = NGL_df.groupby(['economy', 'year', 'item_code_new'])['value'].sum().reset_index().assign(fuel_code = '3_x_ngls').set_index(['economy', 'year']).append(df1)
+df2 = NGL_df.groupby(['economy', 'year', 'item_code_new'])['value'].sum().reset_index().assign(fuel_code = '6_x_ngls').set_index(['economy', 'year']).append(df1)
 
 # Before changing ktoe to PJ, remove rows with data in Gwh
 
