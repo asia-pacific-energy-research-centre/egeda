@@ -10,3 +10,6 @@ dependencies:
   - matplotlib
   - pandas
   - numpy
+  - xlrd
+  - openpyxl
+  - XlsxWriter
