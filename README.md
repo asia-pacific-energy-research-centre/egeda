@@ -1,21 +1,25 @@
 # EGEDA Data Transformations
-xxx
 
-## Using Conda
+## Input data
+Save the following files in `./data/`
+- EGEDA_2018.xlsx
+- order_2018.csv
 
-### Creating the Conda environment
+## Final output
+Two Excel files are saved in `./results/`
+- EGEDA_2018_years.xlsx
+- EGEDA_2018_items.xlsx
+
+## To use
+You can either run the notebook `EGEDA_2018` or the Python file `transform.py`.
+
+## Set up
+### Create the Conda environment
 
 `conda env create --prefix ./egeda-env --file ./workflow/envs/egeda-env.yml`
 
-`conda activate ./ose-env`
+`conda activate ./egeda-env`
 
-`pip install -r ./workflow/envs/requirements.txt`
-
-
-
-### Updating the Conda environment
-
-If you add (remove) dependencies to (from) the `environment.yml` file after the environment has 
-already been created, then you can update the environment with the following command.
+### Update the Conda environment
 
 `conda env update --prefix ./egeda-env --file ./workflow/envs/egeda-env.yml --prune`
